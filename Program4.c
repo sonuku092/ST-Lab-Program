@@ -7,7 +7,7 @@ int main()
     {
         printf("\nEnter 3 integers which are sides of triangle\n");
         scanf("%d%d%d", &a, &b, &c);
-        printf("\na=%d\tb=%d\tc=%d", a, b, c);
+        printf("\na=%d\tb=%d\tc=%d\n", a, b, c);
         c1 = a >= 1 && a <= 10;
         c2 = b >= 1 && b <= 10;
         c3 = c >= 1 && c <= 10;
