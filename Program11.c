@@ -31,15 +31,15 @@ void quicksort(int x[10], int first, int last)
 int main() // main program
 {
     int a[20], i, key, n;
-    printf("enter the size of the array");
+    printf("Enter the size of the array :\n");
     scanf("%d", &n);
     if (n > 0)
     {
-        printf("enter the elements of the array");
+        printf("Enter the elements of the array :\n");
         for (i = 0; i < n; i++)
             scanf("%d", &a[i]);
         quicksort(a, 0, n - 1);
-        printf("the elements in the sorted array is:\n");
+        printf("The elements in the sorted array is:\n");
         for (i = 0; i < n; i++)
             printf("%d\t", a[i]);
     }

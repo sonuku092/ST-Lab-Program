@@ -20,7 +20,7 @@ int main()
     do
     {
         flag = 'y';
-        printf("\nenter the today's date in the form of dd mm yyyy\n");
+        printf("\nEnter the today's date in the form of DD MM YYYY\n");
         scanf("%d%d%d", &day, &month, &year);
         tomm_month = month;
         tomm_year = year;
@@ -95,7 +95,7 @@ int main()
             tomm_month = 1;
             if (year == 2013)
             {
-                printf("the next day is out of boundary value of year\n");
+                printf("The next day is out of boundary value of year\n");
                 tomm_year = year + 1;
             }
             else

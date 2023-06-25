@@ -3,20 +3,20 @@ int main()
 {
     int a, b, c;
     char istriangle;
-    printf("enter 3 integers which are sides of triangle\n");
+    printf("Enter 3 integers which are sides of triangle\n");
     scanf("%d%d%d", &a, &b, &c);
-    printf("a=%d\t,b=%d\t,c=%d", a, b, c);
+    printf("a=%d\t,b=%d\t,c=%d\n", a, b, c);
     if (a < b + c && b < a + c && c < a + b) // to check is it a triangle or not
         istriangle = 'y';
     else
         istriangle = 'n';
     if (istriangle == 'y')
         if ((a == b) && (b == c))
-            printf("equilateral triangle\n");
+            printf("Equilateral triangle\n");
         else if ((a != b) && (a != c) && (b != c))
-            printf("scalene triangle\n");
+            printf("Scalene triangle\n");
         else
-            printf("isosceles triangle\n");
+            printf("Isosceles triangle\n");
     else
         printf("Not a triangle\n");
     return 0;
