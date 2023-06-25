@@ -10,12 +10,12 @@ int main()
     tlocks = 0;
     tstocks = 0;
     tbarrels = 0;
-    printf("\nenter the number of locks and to exit the loop enter -1 for locks\n");
+    printf("\nEnter the number of locks and to exit the loop enter -1 for locks\n");
     scanf("%d", &locks);
     while (locks != -1)
     {
         c1 = (locks <= 0 || locks > 70);
-        printf("enter the number of stocks and barrels\n");
+        printf("Enter the number of stocks and barrels\n");
         scanf("%d%d", &stocks, &barrels);
         c2 = (stocks <= 0 || stocks > 80);
         c3 = (barrels <= 0 || barrels > 90);
@@ -52,7 +52,7 @@ int main()
                 tbarrels = temp;
         }
         printf("total barrel=%d", tbarrels);
-        printf("\nenter the number of locks and to exit the loop enter -1 for locks\n");
+        printf("\nEnter the number of locks and to exit the loop enter -1 for locks\n");
         scanf("%d", &locks);
     }
     printf("\ntotal locks = %d\ntotal stocks =%d\ntotal barrels =%d\n", tlocks, tstocks, tbarrels);
